@@ -38,3 +38,33 @@
 
     let redColor:Color=Color.Blue;
 
+/**
+ *  7、Any类型
+ *     当我们不知道此值是什么类型时，这些值是一个动态内容，用 any 来进行标志
+ *
+ *  9、void 表示没有任何类型
+ *     声明void 类型的变量，只能赋予其 undefined 和 null;
+ */
+
+    let notSure: any=4;
+    notSure.toFixed();
+
+    function error() :void{
+        console.log("you can't here to go");
+    }
+
+    let u: undefined =undefined;
+    let n: null=null;
+
+    /** 默认情况下，null 和 undefined 是所有类型的子类型*/
+
+    let dogAge: number =null;
+
+    let fishCount : number = undefined;
+
+    /**
+     * 断言 告编译阶段诉机器，我已经做了必须的检查，在jsx,只能用as
+     * */
+    let strHello : string ='I love you';
+    let strLen : number= (strHello as string).length;
+    let strLen2 : number=(<string>strHello).length;
