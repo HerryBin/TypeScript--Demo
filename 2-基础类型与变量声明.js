@@ -32,3 +32,26 @@ var Color;
     Color[Color["Blue"] = 9] = "Blue";
 })(Color || (Color = {}));
 var redColor = Color.Blue;
+/**
+ *  7、Any类型
+ *     当我们不知道此值是什么类型时，这些值是一个动态内容，用 any 来进行标志
+ *
+ *  9、void 表示没有任何类型
+ *     声明void 类型的变量，只能赋予其 undefined 和 null;
+ */
+var notSure = 4;
+notSure.toFixed();
+function error() {
+    console.log("you can't here to go");
+}
+var u = undefined;
+var n = null;
+/** 默认情况下，null 和 undefined 是所有类型的子类型*/
+var dogAge = null;
+var fishCount = undefined;
+/**
+ * 断言 告编译阶段诉机器，我已经做了必须的检查，在jsx,只能用as
+ * */
+var strHello = 'I love you';
+var strLen = strHello.length;
+var strLen2 = strHello.length;
