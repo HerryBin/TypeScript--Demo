@@ -22,6 +22,10 @@ var isDone = true;
 var age = 0x16;
 var sayAge = "I'm " + age + " now";
 var numberArray = [12, 33, 99];
+/** 只读数组*/
+var a = [1, 2, 3, 4];
+var ro = a;
+/*ro[1]=2; error*/
 var tupleArray = ['name', 19];
 console.log(tupleArray[0]);
 tupleArray[3] = 'world';

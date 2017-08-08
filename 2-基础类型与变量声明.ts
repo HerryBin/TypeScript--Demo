@@ -28,6 +28,11 @@
 
     let numberArray : Array<number>=[12,33,99];
 
+    /** 只读数组*/
+    let a: number[] = [1, 2, 3, 4];
+    let ro: ReadonlyArray<number> = a;
+    /*ro[1]=2; error*/
+
     let tupleArray :[string,number] =['name',19];
 
     console.log(tupleArray[0]);
